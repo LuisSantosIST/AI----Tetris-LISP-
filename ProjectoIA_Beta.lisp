@@ -549,7 +549,8 @@
 ;NOTA-> Caso o numero de pecas seja impar vamos realizar o processo ate a ultima peca e a ultima peca sera escolhida com 
 ;		base apenas nos filhos.
 (defun procura-best(array pecas)
-	(let ((caminho (list))
+	(let ((run1 (get-internal-run-time))
+		(caminho (list))
 		 (node (make-node :state (make-estado :pecas-por-colocar pecas :tabuleiro (array->tabuleiro array))))
 		 (resto 0))
 
@@ -564,6 +565,10 @@
 	(if (equalp resto 1)
 		(progn (setf node (escolhe-melhor-filho (node-state node) #'meta-heuristica))
 		  	   (setf caminho (append caminho (list (node-action node))))))
+	(let ((run2 (get-internal-run-time)))
+	(format t "Computation took:~%")
+	(format t "  ~f seconds of run time~%"
+		(/ (- run2 run1) internal-time-units-per-second)))
 	caminho))
 
 ;@@@brief:
@@ -689,7 +694,7 @@
 		((300) (setf linhas 2))
 		((500) (setf linhas 3))
 		((800) (setf linhas 4)))
-	(* linhas -1)))
+	(* (* linhas linhas) -1)))
 
 ;@@@brief:
 ;		se considerar-mos 2 niveis vamos querer as linhas completas pelo pai e pelo filho, ou seja linhas completas naquelas duas
