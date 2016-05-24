@@ -5,4 +5,5 @@ ano lectivo 2015/2016
 professor: João Dias
 Nota final do projecto: 19.59
 
----- antes de correr o projecto é preciso compilar o ficheiro utils e carregar para o terminal visto que se trata de uma biblioteca necessaria para o projecto correr-----
+---- antes de correr o projecto é preciso compilar o ficheiro utils e carregar para o terminal visto que se trata de uma biblioteca necessaria para o projecto correr
+---- os ficheiros geneticAlgorithm e geneticBest2 são ficheiros auxiliares fora do ambito do enunciado que foram criados só para encontrar os pesos relativos entre as funções heuristicas
