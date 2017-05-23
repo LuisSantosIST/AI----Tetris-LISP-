@@ -7,6 +7,8 @@ ano lectivo 2015/2016 <br />
 professor: João Dias <br />
 Nota final do projecto: 19.59<br />
 
+## Algoritmo
+O algoritmo utilizado para resolver o projecto pode ser lido no ficheiro relatorioFinal_IA.pdf
 
 ## Software necessário
 È necessario ter o Clisp instalado.
