@@ -3,8 +3,8 @@ Projecto da cadeira de Inteligencia Artificial (enunciado disponível no ficheir
 
 Instituto Superior Tecnico -1º semestre 3º ano 
 
-ano lectivo 2015/2016 <br />
-professor: João Dias <br />
+Ano lectivo 2015/2016 <br />
+Professor: João Dias <br />
 Nota final do projecto: 19.59<br />
 
 ## Algoritmo
